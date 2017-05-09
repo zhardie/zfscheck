@@ -65,7 +65,6 @@ try:
 except:
     issues.append('Error checking zpool scrub status')
 
-issues.append('foo')
 if issues:
     r = service.users().getProfile(userId='me').execute()
     user = r['emailAddress']
