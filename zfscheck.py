@@ -57,7 +57,7 @@ try:
 except:
     issues.append('Error checking zpool health')
 
-# scrub check
+# scrub check TODO: Actually do this
 volumes = []
 try:
     volumes = subprocess.check_output(['zpool', 'list', '-H', '-o', 'name']).split('\n')
