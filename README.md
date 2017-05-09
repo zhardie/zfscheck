@@ -13,8 +13,10 @@ First, you'll need client credentials in order to set up emailing.
 9. Move this file to your zfscheck.py directory and rename it client_secret.json
 
 Second, you'll need the Google Client Library
+
 `pip install --upgrade google-api-python-client`
 
 Lastly, run once to authorize the script to send email as you, and then add a cron job
+
 `python zfscheck.py --noauth_local_webserver`
 `(crontab -l ; echo "0 * * * * python path/to/your/zfscheck.py") | crontab`
