@@ -20,4 +20,4 @@ Lastly, run once to authorize the script to send email as you, and then add a cr
 
 `python zfscheck.py --noauth_local_webserver`
 
-`(crontab -l ; echo "0 * * * * python path/to/your/zfscheck.py") | crontab`
+`(crontab -l ; echo "0 * * * * cd /path/to/zfscheck && python zfscheck.py") | crontab`
